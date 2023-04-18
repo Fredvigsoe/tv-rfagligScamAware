@@ -12,6 +12,18 @@
         android:theme="@style/Theme.ScamAware"
         tools:targetApi="31">
         <activity
+            android:name=".Frontpage"
+            android:exported="false" />
+        <activity android:name=".FrontpageHomefunctionActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".FrontpageHelpFunctionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FrontpageCommunityFunction"
+            android:exported="false" />
+        <activity
+            android:name=".FrontpageListFunctionActivity"
             android:name=".PostNordCheckerActivity"
             android:exported="false" />
         <activity

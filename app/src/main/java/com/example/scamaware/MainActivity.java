@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startIntroduction(View view){
-        Intent introductionIntent = new Intent(this,FrontpageActivity.class);
+        Intent introductionIntent = new Intent(this,FrontpageHomefunctionActivity.class);
         startActivity(introductionIntent);
     }
 

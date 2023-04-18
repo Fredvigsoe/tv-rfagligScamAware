@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class FrontpageActivity extends AppCompatActivity {
+public class Frontpage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_frontpage);
+        setContentView(R.layout.activity_frontpage2);
     }
 
     public void goToChecklist(View view){
