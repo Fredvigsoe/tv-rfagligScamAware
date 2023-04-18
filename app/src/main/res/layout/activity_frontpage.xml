@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChecklistActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -112,30 +112,33 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="2dp"></LinearLayout>
 
-    <Button
-        android:id="@+id/lasttipKnap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forrige tip"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="554dp"/>
-
-    <Button
-        android:id="@+id/nexttipKnap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Næste tip"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="554dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Indsæt tips her"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="-18dp"
+        android:background="@drawable/blackboxlayout"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/backgroundforarticle"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

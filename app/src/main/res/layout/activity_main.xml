@@ -4,141 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#393424"
+    app:backgroundTint="@null">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="415dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="40dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <FrameLayout
-            android:layout_width="100dp"
-            android:layout_height="85dp"
-            android:layout_marginLeft="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:src="@drawable/backgroundforgrandfatherpicture" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="4.5dp"
-                android:src="@drawable/grandfather" />
-        </FrameLayout>
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:text="ScamAware"
-            android:textColor="@color/black"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="133dp"
-            tools:layout_editor_absoluteY="55dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginBottom="10dp"
-        android:background="#5EEB5B"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/homeButton"
-            android:layout_width="1dp"
-            android:layout_height="45dp"
-            android:layout_margin="10dp"
-            android:layout_weight="0.1"
-            android:background="@drawable/button_home"
-
-            app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/checklistButton"
-            android:layout_width="1dp"
-            android:layout_height="45dp"
-            android:layout_margin="10dp"
-            android:layout_weight="0.1"
-            android:background="@drawable/button_checklist"
-            app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/communityButton"
-            android:layout_width="1dp"
-            android:layout_height="45dp"
-            android:layout_margin="10dp"
-            android:layout_weight="0.1"
-            android:background="@drawable/button_community"
-            app:backgroundTint="@null" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="1dp"
-            android:layout_height="45dp"
-            android:layout_margin="10dp"
-            android:layout_weight="0.1"
-            android:background="@drawable/button_help"
-            app:backgroundTint="@null" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        android:orientation="horizontal"
-        android:background="#5EEB5B"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="2dp"></LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="510dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="-18dp"
-        android:background="@drawable/blackboxlayout"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="ScamAware"
+        android:textColor="#A6EBC9"
+        android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/backgroundforarticle"
-            android:orientation="vertical"></LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="296dp"
+        android:layout_height="169dp"
+        android:text="ScamAware er en app, der tilbyder sikker og støttende information for ældre mennesker, der er blevet målrettet af svindlere. Med sin svindelforebyggende ressourcer, artikler og nødkontakt-funktion er appen en værdifuld ressource for enhver, der er blevet påvirket af denne type kriminalitet."
+        android:textColor="#A6EBC9"
+        android:gravity="fill"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-    </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:width="200dp"
+        android:background="@drawable/custom_button"
+        android:text="Videre"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="startIntroduction"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="289dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="103dp"
+        android:text="Klik videre, for en kort introduktion af appen og dens funktioner:"
+        android:textColor="#A6EBC9"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.19"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"
+        app:srcCompat="@drawable/grandfather"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
