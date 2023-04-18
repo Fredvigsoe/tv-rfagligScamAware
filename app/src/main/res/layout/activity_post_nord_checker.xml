@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".PostNordCheckerActivity">
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="415dp"
@@ -72,7 +71,8 @@
             android:layout_margin="10dp"
             android:layout_weight="0.1"
             android:background="@drawable/button_home"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@null"
+            android:onClick="goToFrontpage"/>
 
         <Button
             android:id="@+id/checklistButton"
@@ -91,18 +91,17 @@
             android:layout_margin="10dp"
             android:layout_weight="0.1"
             android:background="@drawable/button_community"
-            app:backgroundTint="@null"
-            android:onClick="goToPostnordChecker"/>
+            app:backgroundTint="@null" />
 
         <Button
-            android:id="@+id/introductionButton"
+            android:id="@+id/button4"
             android:layout_width="1dp"
             android:layout_height="45dp"
             android:layout_margin="10dp"
             android:layout_weight="0.1"
             android:background="@drawable/button_help"
             app:backgroundTint="@null"
-            android:onClick="goToIntroduction"/>
+            android:onClick="goToIntroduction" />
     </LinearLayout>
 
     <LinearLayout
@@ -114,33 +113,49 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="2dp"></LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="510dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="-18dp"
-        android:background="@drawable/blackboxlayout"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+    <EditText
+        android:id="@+id/emailIndtastetAfBruger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="97dp"
+        android:ems="10"
+        android:hint="Indtast Postnord e-mail"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postNordText" />
+
+    <TextView
+        android:id="@+id/postNordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:text="Der er mangle som prøver at svindle i PostNords navn,
+ ved at sende en e-mail med at man mangler at betale fragtgebyr.
+ Tjek emailen nedestående for at se om det er PostNord der har sendt den."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/backgroundforarticle"
-            android:orientation="vertical"></LinearLayout>
+    <Button
+        android:id="@+id/submitEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="244dp"
+        android:text="Tjek E-mail"
+        app:layout_constraintStart_toEndOf="@+id/emailIndtastetAfBruger"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:onClick="submitEmail"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-    </LinearLayout>
-
+    <TextView
+        android:id="@+id/resultAfEmailCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="99dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailIndtastetAfBruger" />
 </androidx.constraintlayout.widget.ConstraintLayout>

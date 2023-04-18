@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".ChecklistActivity">
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="415dp"
@@ -72,7 +71,8 @@
             android:layout_margin="10dp"
             android:layout_weight="0.1"
             android:background="@drawable/button_home"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@null"
+            android:onClick="goToFrontpage"/>
 
         <Button
             android:id="@+id/checklistButton"
@@ -81,8 +81,7 @@
             android:layout_margin="10dp"
             android:layout_weight="0.1"
             android:background="@drawable/button_checklist"
-            app:backgroundTint="@null"
-            android:onClick="goToChecklist"/>
+            app:backgroundTint="@null" />
 
         <Button
             android:id="@+id/communityButton"
@@ -90,12 +89,12 @@
             android:layout_height="45dp"
             android:layout_margin="10dp"
             android:layout_weight="0.1"
+            android:onClick="goToPostnordChecker"
             android:background="@drawable/button_community"
-            app:backgroundTint="@null"
-            android:onClick="goToPostnordChecker"/>
+            app:backgroundTint="@null" />
 
         <Button
-            android:id="@+id/introductionButton"
+            android:id="@+id/button4"
             android:layout_width="1dp"
             android:layout_height="45dp"
             android:layout_margin="10dp"
@@ -114,33 +113,24 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="2dp"></LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="510dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="-18dp"
-        android:background="@drawable/blackboxlayout"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="334dp"
+        android:text="Næste tip"
+        android:onClick="nextTip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="201dp"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/backgroundforarticle"
-            android:orientation="vertical"></LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"></LinearLayout>
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
