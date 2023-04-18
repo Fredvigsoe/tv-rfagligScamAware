@@ -72,7 +72,6 @@
             android:layout_margin="10dp"
             android:layout_weight="0.1"
             android:background="@drawable/button_home"
-
             app:backgroundTint="@null" />
 
         <Button
@@ -82,7 +81,8 @@
             android:layout_margin="10dp"
             android:layout_weight="0.1"
             android:background="@drawable/button_checklist"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@null"
+            android:onClick="goToChecklist"/>
 
         <Button
             android:id="@+id/communityButton"
@@ -91,16 +91,18 @@
             android:layout_margin="10dp"
             android:layout_weight="0.1"
             android:background="@drawable/button_community"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@null"
+            android:onClick="goToPostnordChecker"/>
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/introductionButton"
             android:layout_width="1dp"
             android:layout_height="45dp"
             android:layout_margin="10dp"
             android:layout_weight="0.1"
             android:background="@drawable/button_help"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@null"
+            android:onClick="goToIntroduction"/>
     </LinearLayout>
 
     <LinearLayout
