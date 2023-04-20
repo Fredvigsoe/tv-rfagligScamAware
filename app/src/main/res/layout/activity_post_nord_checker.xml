@@ -12,7 +12,8 @@
         android:layout_marginTop="40dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
         <FrameLayout
             android:layout_width="100dp"
@@ -72,7 +73,7 @@
             android:layout_weight="0.1"
             android:background="@drawable/button_home"
             app:backgroundTint="@null"
-            android:onClick="goToFrontpage"/>
+            android:onClick="goToFrontpage" />
 
         <Button
             android:id="@+id/checklistButton"
@@ -117,8 +118,8 @@
         android:id="@+id/emailIndtastetAfBruger"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="97dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="108dp"
         android:ems="10"
         android:hint="Indtast Postnord e-mail"
         android:inputType="textPersonName"
@@ -129,11 +130,13 @@
         android:id="@+id/postNordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="78dp"
+        android:layout_marginTop="48dp"
         android:text="Der er mangle som prøver at svindle i PostNords navn,
  ved at sende en e-mail med at man mangler at betale fragtgebyr.
  Tjek emailen nedestående for at se om det er PostNord der har sendt den."
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -144,18 +147,23 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="244dp"
         android:text="Tjek E-mail"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
         app:layout_constraintStart_toEndOf="@+id/emailIndtastetAfBruger"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        android:onClick="submitEmail"/>
+        android:onClick="submitEmail" />
 
     <TextView
         android:id="@+id/resultAfEmailCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="99dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
         android:text="TextView"
+        android:textSize="18sp"
         android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailIndtastetAfBruger" />
 </androidx.constraintlayout.widget.ConstraintLayout>

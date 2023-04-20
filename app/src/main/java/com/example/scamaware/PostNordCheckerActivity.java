@@ -30,7 +30,7 @@ public class PostNordCheckerActivity extends AppCompatActivity {
         startActivity(intentToIntroduction);
     }
     public void goToFrontpage(View view){
-        Intent intentToFrontpage = new Intent(this, FrontpageActivity.class);
+        Intent intentToFrontpage = new Intent(this, Frontpage.class);
         startActivity(intentToFrontpage);
     }
 
@@ -44,16 +44,16 @@ public class PostNordCheckerActivity extends AppCompatActivity {
 
         if(submittedEmailToString.equals(postNordMail1) || submittedEmailToString.equals(postNordMail2)
         || submittedEmailToString.equals(postNordMail3)){
-            emailChecker.setVisibility(1);
+            emailChecker.setVisibility(View.VISIBLE);
             emailChecker.setText("Det er PostNord's e-mail, så den er god nok!");
             emailChecker.setTextColor(Color.GREEN);
         }
         else {
-            emailChecker.setVisibility(1);
-            emailChecker.setText("Det er en falsk e-mail, så slet den med det samme!" +
-                    "Følgende er en liste over PostNords e-mail addresser de sender pakkeinformationer ud med: " + postNordMail1
-            + postNordMail2
-            +postNordMail3);
+            emailChecker.setVisibility(View.VISIBLE);
+            emailChecker.setText("Det er en falsk e-mail, så slet den med det samme!" + "\n" + "\n" +
+                    "Følgende er en liste over PostNords e-mail addresser de sender pakkeinformationer ud med: " + "\n" + postNordMail1
+            + "\n" + postNordMail2
+            + "\n" +postNordMail3);
             emailChecker.setTextColor(Color.RED);
         }
 

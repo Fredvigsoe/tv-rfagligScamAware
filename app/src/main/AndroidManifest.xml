@@ -24,14 +24,13 @@
             android:exported="false" />
         <activity
             android:name=".FrontpageListFunctionActivity"
-            android:name=".PostNordCheckerActivity"
             android:exported="false" />
         <activity
             android:name=".ChecklistActivity"
             android:exported="false" />
         <activity
-            android:name=".FrontpageActivity"
-            android:exported="false" />
+            android:name=".PostNordCheckerActivity"
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

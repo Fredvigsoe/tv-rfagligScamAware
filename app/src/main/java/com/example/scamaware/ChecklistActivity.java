@@ -39,7 +39,7 @@ public class ChecklistActivity extends AppCompatActivity {
         tipstoRender.setText(tips.get(currentTipIndex));
     }
     public void goToFrontpage(View view){
-        Intent intentToFrontpage = new Intent(this, FrontpageActivity.class);
+        Intent intentToFrontpage = new Intent(this, Frontpage.class);
         startActivity(intentToFrontpage);
     }
 
